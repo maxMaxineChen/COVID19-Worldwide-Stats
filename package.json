@@ -44,7 +44,8 @@
     "clean": "gatsby clean",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src --fix",
-    "format": "prettier --write \"**/*.{js,jsx}\""
+    "format": "prettier --write \"**/*.{js,jsx}\"",
+    "deploy": "gatsby build --prefix-paths"
   },
   "repository": {
     "type": "git",
