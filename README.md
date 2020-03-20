@@ -1,1 +1,1 @@
-# COVID19-Worldwide-Stats.github.io
+# COVID19-Worldwide-Stats
