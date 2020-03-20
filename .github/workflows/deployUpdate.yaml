@@ -38,4 +38,3 @@ jobs:
       with:
            github_token: ${{ secrets.COVID19 }}
            publish_dir: ./master/public
-           publish_branch: master
