@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-   - cron: "0 0,8,16 * * *"
+   - cron: "15 0,8,16 * * *"
 
 jobs:
   syncData:
@@ -29,12 +29,12 @@ jobs:
            mkdir -p master/data
            cp sourceData/data/data.json master/data/data.json
     - name: Install
-      run:  | 
+      run:  |
+           cd master 
            npm install
            npm run build
-
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-           github_token: ${{ secrets.GITHUB_TOKEN }}
-           publish_dir: ./public
+           github_token: ${{ secrets.COVID19 }}
+           publish_dir: ./master/public
