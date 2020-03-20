@@ -36,5 +36,5 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-           personal_token: ${{ secrets.COVID }}
+           deploy_key: ${{ secrets.COVID19 }}
            publish_dir: ./master/public
