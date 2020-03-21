@@ -120,7 +120,9 @@ const IndexPage = () => {
                 confirmed={confirmed}
                 recovered={recovered}
                 deaths={deaths}
-                lastUpdate={lastUpdate}
+                lastUpdate={moment(lastUpdate)
+                  .local()
+                  .format("YYYY-MM-DD HH:MM")}
               />
             </Paper>
           </Grid>
