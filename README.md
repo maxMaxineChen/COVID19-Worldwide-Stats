@@ -1,17 +1,16 @@
 # COVID19-Worldwide-Stats
 A Coronavirus COVID-19 global data statistics application - developed using React, Gatsby, Material UI, Recharts
 
+### [Live Demo (view details by clicking lines and bars)](https://maxmaxinechen.github.io/COVID19-Worldwide-Stats/ "COVID-19 Worldwide Statistics")
 <p align="center">
   <img height="500" src="https://github.com/maxMaxineChen/COVID19-Worldwide-Stats/blob/master/images/laptop.png" />
 </p>
-
-### [Live Demo](https://maxmaxinechen.github.io/COVID19-Worldwide-Stats/ "COVID-19 Worldwide Statistics")
 
 ## Overview
 The data of this statistics accessed from the [mathdroid API](https://github.com/mathdroid/covid-19-api), which serving data from John Hopkins University CSSE.
 
 The [Live Demo](https://maxmaxinechen.github.io/COVID19-Worldwide-Stats/ "COVID-19 Worldwide Statistics") data gets updated every 8 hours automatically from a JSON file from [this Git Repo](https://github.com/maxMaxineChen/COVID-19-worldwide-json-data-script) by Github Actions.
-### Tech stack: React, Gatsby, Material UI, Recharts, Github Actions, Responsive design
+Tech stack: React, Gatsby, Material UI, Recharts, Github Actions, Responsive design
 
 ## Getting Start
 
