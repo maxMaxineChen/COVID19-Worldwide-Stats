@@ -57,7 +57,19 @@ const IndexPage = () => {
               countryCode
               deaths
               recovered
+              confirmedGrowth
+              confirmedGrowthRate
+              deathsGrowth
+              deathsGrowthRate
+              recoveredGrowth
+              recoveredGrowthRate
             }
+            confirmedGrowth
+            confirmedGrowthRate
+            deathsGrowth
+            deathsGrowthRate
+            recoveredGrowth
+            recoveredGrowthRate
           }
         }
       }
@@ -73,6 +85,8 @@ const IndexPage = () => {
     dailyReports,
   } = data.allDataJson.nodes[0]
   const [activeCountryIndex, setActiveCountryIndex] = useState(0)
+  const [dailyReportsMode, setDailyReportsMode] = useState("total")
+  const [countryReportsMode, setCountryReportsMode] = useState("total")
   let siteUpdate =
     "There is an error in dataset. Please check with Data Source."
   const filteredDailyReports = []
@@ -133,6 +147,8 @@ const IndexPage = () => {
                 title="COVID-19 Daily Reports"
                 color={color}
                 aspectRatio={3}
+                mode={dailyReportsMode}
+                handleClick={setDailyReportsMode}
               />
             </Paper>
           </Grid>
@@ -151,15 +167,11 @@ const IndexPage = () => {
             <Paper className={classes.verticalPaper}>
               <DailyLineChart
                 data={countryReport.countryReportDaily}
-                title={
-                  <>
-                    COVID-19 Daily Reports in
-                    <br />
-                    {countryReport.activeCountryName}
-                  </>
-                }
+                title={`Reports for ${countryReport.activeCountryName}`}
+                mode={countryReportsMode}
+                handleClick={setCountryReportsMode}
                 color={color}
-                aspectRatio={1.31}
+                aspectRatio={1.335}
               />
             </Paper>
           </Grid>
