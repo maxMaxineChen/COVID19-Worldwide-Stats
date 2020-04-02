@@ -18,5 +18,17 @@ module.exports = {
     },
     `gatsby-transformer-json`,
     `gatsby-theme-material-ui`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Coronavirus COVID-19 Statistics Worldwide",
+        short_name: "COVID-19 Stats",
+        start_url: "https://maxmaxinechen.github.io/COVID19-Worldwide-Stats",
+        background_color: "#fafafa",
+        theme_color: "#008dc9",
+        display: "standalone",
+        icon: "images/icon.png", 
+      },
+    },
   ],
 }
