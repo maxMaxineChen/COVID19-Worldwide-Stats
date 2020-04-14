@@ -160,7 +160,7 @@ DailyLineChart.propTypes = {
   }).isRequired,
   aspectRatio: PropTypes.number.isRequired,
   mode: PropTypes.string.isRequired,
-  handleClick: PropTypes.func.isRequired
+  handleClick: PropTypes.func.isRequired,
 }
 CustomizedAxisTick.propTypes = {
   x: PropTypes.number,

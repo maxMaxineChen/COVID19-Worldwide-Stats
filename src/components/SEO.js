@@ -28,7 +28,11 @@ const Metadata = () => {
 
   return (
     <Helmet>
-      <html itemScope itemType="http://schema.org/WebPage" lang={site.language} />
+      <html
+        itemScope
+        itemType="http://schema.org/WebPage"
+        lang={site.language}
+      />
 
       <title itemProp="name">{site.title}</title>
 

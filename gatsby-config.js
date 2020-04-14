@@ -1,13 +1,13 @@
 module.exports = {
   pathPrefix: "/COVID19-Worldwide-Stats",
   siteMetadata: {
-    title: `COVID-19 Statistics Worldwide`,
-    description: `Coronavirus COVID-19 Statistics Worldwide`,
-    author: `Maxine Chen`,
-    language:`en`,
-    url:`https://maxmaxinechen.github.io/COVID19-Worldwide-Stats/`,
-    siteSource: `https://github.com/maxMaxineChen/COVID19-Worldwide-Stats.github.io`,
-    dataSource: `https://github.com/maxMaxineChen/COVID-19-worldwide-json-data-script`,
+    title: "COVID-19 Statistics Worldwide",
+    description: "Coronavirus COVID-19 Statistics Worldwide",
+    author: "Maxine Chen",
+    language: "en",
+    url: "https://maxmaxinechen.github.io/COVID19-Worldwide-Stats/",
+    siteSource: "https://github.com/maxMaxineChen/COVID19-Worldwide-Stats.github.io",
+    dataSource: "https://github.com/maxMaxineChen/COVID-19-worldwide-json-data-script",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -29,13 +29,14 @@ module.exports = {
         background_color: "#fafafa",
         theme_color: "#008dc9",
         display: "standalone",
-        icon: "images/icon.png", 
+        icon: "images/icon.png",
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-163384902-2",
+        head: true,
       },
     },
   ],
