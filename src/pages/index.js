@@ -4,6 +4,7 @@ import {Grid, Paper} from "@material-ui/core"
 import {useStaticQuery, graphql} from "gatsby"
 import moment from "moment"
 import theme from "../components/theme"
+import SEO from "../components/SEO"
 import Header from "../components/Header"
 import Overview from "../components/Overview"
 import DailyLineChart from "../components/DailyLineChart"
@@ -125,6 +126,7 @@ const IndexPage = () => {
   }
   return (
     <ThemeProvider theme={theme}>
+      <SEO />
       <Header lastSync={siteUpdate} />
       {errorStatus === false && (
         <Grid container className={classes.container}>
