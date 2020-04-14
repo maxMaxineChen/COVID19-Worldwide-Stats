@@ -13,7 +13,7 @@ const useSiteMetadata = () => {
             description
             siteSource
             title
-            url
+            siteUrl
             language
           }
         }
@@ -38,7 +38,7 @@ const Metadata = () => {
 
       <meta name="author" content={site.author} />
       <meta name="description" content={site.description} />
-      <link rel="canonical" href={site.url} />
+      <link rel="canonical" href={site.siteUrl} />
 
       <link rel="preconnect" href="https://www.google-analytics.com" />
 
@@ -50,7 +50,7 @@ const Metadata = () => {
       <meta property="og:title" content={site.title} />
       <meta property="og:description" content={site.description} />
       <meta property="og:site_name" content={site.title} />
-      <meta property="og:url" content={site.url} />
+      <meta property="og:url" content={site.siteUrl} />
       <meta property="og:image" content={site.siteUrl + site.siteLogo} />
       <meta property="og:language" content={site.language} />
     </Helmet>
