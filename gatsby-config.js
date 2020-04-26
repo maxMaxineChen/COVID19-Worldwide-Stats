@@ -5,9 +5,10 @@ module.exports = {
     description: "Coronavirus COVID-19 Statistics Worldwide",
     author: "Maxine Chen",
     language: "en",
-    siteUrl: "https://maxmaxinechen.github.io/COVID19-Worldwide-Stats/",
+    siteUrl: "https://maxmaxinechen.github.io",
     siteSource: "https://github.com/maxMaxineChen/COVID19-Worldwide-Stats.github.io",
     dataSource: "https://github.com/maxMaxineChen/COVID-19-worldwide-json-data-script",
+    url: "https://maxmaxinechen.github.io/COVID19-Worldwide-Stats",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
