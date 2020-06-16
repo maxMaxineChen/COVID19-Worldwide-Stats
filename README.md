@@ -12,6 +12,10 @@ The data of this statistics accessed from the [mathdroid API](https://github.com
 The [Live Demo](https://maxmaxinechen.github.io/COVID19-Worldwide-Stats/ "COVID-19 Worldwide Statistics") data gets updated every 8 hours automatically from a JSON file from [this Git Repo](https://github.com/maxMaxineChen/COVID-19-worldwide-json-data-script) by Github Actions.
 Tech stack: React, Gatsby, Material UI, Recharts, Github Actions, Responsive design
 
+<p align="center">
+  <img width="700" src="https://github.com/maxMaxineChen/COVID19-Worldwide-Stats/blob/master/images/how-the-site-work.jpg" />
+</p>
+
 ## Getting Start
 
 1.  **Clone.**
@@ -54,4 +58,4 @@ Tech stack: React, Gatsby, Material UI, Recharts, Github Actions, Responsive des
 ## Todo
 
 - [ ] Get Jest up and run some tests
-- [ ] Extend data visualization features
+- [x] Extend data visualization features
