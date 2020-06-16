@@ -11,7 +11,17 @@ jobs:
   syncData:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout to set Node version
+        uses: actions/checkout@v2
+      - name: Uses Node.js 10.x
+        # Rollback to Node 10.x to fix "Cannot find module '@babel/compat-data/corejs3-shipped-proposals'" error.
+        # The current gatsby version relies on @babel/preset-env v 7.8.7, which has to run under node.js v13.13/12.17.
+        # To avoid this conflict, the node version has to be downgraded.
+        # ref: https://github.com/nodejs/node/issues/32852
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10'
+      - name: Checkout to website
         uses: actions/checkout@v2
         with:
           path: master
