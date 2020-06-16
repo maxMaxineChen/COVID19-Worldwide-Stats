@@ -120,6 +120,9 @@ const IndexPage = () => {
       })
       return {countryReportDaily, activeCountryName}
     }
+    filteredDailyReports[theLatestDateIndex].countries.sort((a, b) => {
+      return (b.confirmed - a.confirmed)
+    })
     theLatestDate = filteredDailyReports[theLatestDateIndex].updatedDate
     theLatestReport = filteredDailyReports[theLatestDateIndex].countries
     countryReport = getCountryReport()
